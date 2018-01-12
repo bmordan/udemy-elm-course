@@ -1,0 +1,33 @@
+body {
+  background-image: url("https://ucarecdn.com/6d357454-1413-4275-b426-2e48c5ad1558/table.jpg");
+  background-position: top left;
+  background-size: cover;
+}
+
+.spin {
+  animation: 1s infinite spin;
+}
+
+.roll {
+  animation: 1s infinite roll;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: rotateX(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+    transform: rotate(360deg);
+  }
+}

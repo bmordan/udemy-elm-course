@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "serve": "elm-reactor --port=3000",
+    "watch": "onchange *.elm -- elm-make 07_coin-flip.elm --output js/bundle.js",
+    "start": "npm run watch && npm run serve"
+  },
+  "dependencies": {
+    "onchange": "^3.3.0"
+  }
+}
